@@ -36,6 +36,7 @@ public class EmployeeController {
 
 	@PostMapping("/save")
 	public Employee insert(@RequestBody Employee employee) {
+		System.out.println("insert succeess");
 		return employeeService.insert(employee);
 	}
 

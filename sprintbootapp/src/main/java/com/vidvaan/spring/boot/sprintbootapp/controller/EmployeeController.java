@@ -27,6 +27,7 @@ public class EmployeeController {
 		logger.info("Find by eno :{}", eno);
 		return employeeService.findById(eno);
 	}
+	hello this is Ashraf
 
 	@GetMapping("/deleteById/{eno}")
 	public void deleteById(int eno) {
@@ -36,6 +37,7 @@ public class EmployeeController {
 
 	@PostMapping("/save")
 	public Employee insert(@RequestBody Employee employee) {
+		System.out.println("insert succeess");
 		return employeeService.insert(employee);
 	}
 
